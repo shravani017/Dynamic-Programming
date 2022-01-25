@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int fib(int n) {
+        return totalfib(n);
+    }
+    int totalfib(int n){
+        if(n<=1){
+            return n;
+        }
+        int a = totalfib(n-1);
+        int b = totalfib(n-2);
+        
+        return a+b;
+    }
+};
